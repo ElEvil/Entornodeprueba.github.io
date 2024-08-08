@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frase Aleatoria</title>
+</head>
+<body>
+    <h1></h1>
+    <p id="randomPhrase"></p>
+
+    <script>
+        // Frases disponibles
+        const frases = [
+            "a traido galletas para todos",
+            "a traido pizza para todos",
+            "a traido jugo para todos",
+            "a traido papas para todos",
+            "a traido tacos para todos",
+            "El Evil descubrio el secreto del virus"
+        ];
+
+        // Genera un índice aleatorio para seleccionar una frase
+        const randomIndex = Math.floor(Math.random() * frases.length);
+        document.getElementById("randomPhrase").textContent = frases[randomIndex];
+    </script>
+</body>
+</html>
